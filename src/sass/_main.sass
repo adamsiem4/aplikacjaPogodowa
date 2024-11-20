@@ -1,0 +1,43 @@
+.weather_info
+    @include flex-column
+
+    .temp_info
+        @include flex-row
+        justify-content: center
+        gap: 10px
+
+        .temp
+            font-size: 32px
+
+.all_weather_info
+        margin-top: 10px
+
+        p
+            margin-top: 9px
+
+        span
+            font-weight: bold
+
+.description_color
+    padding: 10px
+    border-radius: 10px
+
+@media screen and (min-width: $layout-breakpoint-medium)
+    .city_name
+        text-align: center
+        
+    .all_weather_values
+        @include flex-row
+        flex-wrap: wrap
+
+        p
+            width: 45%
+            text-align: center
+
+    .pollution
+        @include flex-column
+
+@media screen and (min-width: $layout-breakpoint-large)
+    .all_weather_values
+        p
+            width: 30%
